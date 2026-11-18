@@ -42,7 +42,7 @@ from .updater import Updater, find_asset, finish_previous, install_dir
 from .updates import UpdateChecker
 from .window import PetWindow, build_hit_grid
 
-INSTANCE_KEY = "claude-chan-pet"
+INSTANCE_KEY = "claude-chan-uniform-pet"
 
 
 class QtScheduler:
@@ -73,11 +73,11 @@ class QtScheduler:
 
 
 # 形象（皮肤）：名字 → (显示名, resources 下的素材目录)。素材目录里有 manifest.json 的才能选
-SKINS = {"adult": ("原版", "assets"), "chibi": ("Q 版", "assets-chibi"), "maid": ("女仆", "assets-maid")}
+SKINS = {"uniform": ("校服", "assets-uniform")}
 
 
 # 半身时每个形象画到哪里（占整帧高度）：头到膝上的书；没写的形象用 HALF_CROP_DEFAULT
-HALF_CROP = {"adult": 0.56, "chibi": 0.60, "maid": 0.56}
+HALF_CROP = {"uniform": 0.60}
 HALF_CROP_DEFAULT = 0.58
 
 
@@ -102,8 +102,9 @@ class PetApp:
             self.log(config_error)
         self._app_state_file = data_dir() / "app-state.json"
         app_state = self._load_app_state()
-        saved = app_state.get("skin", "adult")
-        self.skin = saved if saved in self.available_skins() else "adult"
+        available = self.available_skins()
+        saved = app_state.get("skin", "uniform")
+        self.skin = saved if saved in available else (available[0] if available else "uniform")
         self.switch_style = app_state.get("switchStyle", self.config["animation"].get("switchStyle", "smooth"))
         self.config["animation"]["switchStyle"] = self.switch_style
         # 调试面板：源码运行时总是可用；打包版只在配置 debugPanel 为 true 或带 --debug 启动时可用
@@ -575,7 +576,7 @@ class PetApp:
 
 def main() -> None:
     app = QApplication(sys.argv)
-    app.setApplicationName("claude-chan")
+    app.setApplicationName("claude-chan-uniform")
     app.setApplicationVersion(__version__)
     app.setQuitOnLastWindowClosed(False)  # 桌宠窗口关闭时只是隐藏到托盘
 

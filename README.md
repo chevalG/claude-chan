@@ -11,6 +11,13 @@ Claude Code 在思考、读代码、写代码、等你确认、做完了、出�
 
 </div>
 
+> **本 Fork：Claude-Chan 校服版**
+>
+> 这是 [chevalG/claude-chan](https://github.com/chevalG/claude-chan) 的独立校服版分支：保留上游历史与 MIT/CC BY-NC-SA 授权，
+> 使用校园制服、教室学生椅和深色精装书重新制作全部状态素材。启动入口是 `start-claude-chan.bat`，
+> 独立端口 47801、独立 `data/` 与 `resources/assets-uniform/`，可和 GPT-Chan 同时运行。
+> 制作说明、状态表和素材授权见 [docs/uniform-build.md](docs/uniform-build.md)。
+
 ---
 
 ## 她能做什么

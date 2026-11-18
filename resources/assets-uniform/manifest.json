@@ -1,0 +1,207 @@
+{
+  "fps": 24,
+  "width": 774,
+  "height": 1376,
+  "hubs": {
+    "A": {
+      "keyframe": "keyframes/claude-girl-uniform-idle-transparent-9x16.png"
+    }
+  },
+  "states": {
+    "idle": {
+      "hub": "A",
+      "kind": "loop",
+      "atHub": true,
+      "keyframe": "keyframes/claude-girl-uniform-idle-transparent-9x16.png"
+    },
+    "waiting": {
+      "hub": "A",
+      "kind": "loop",
+      "atHub": true,
+      "keyframe": "keyframes/claude-girl-uniform-idle-transparent-9x16.png"
+    },
+    "thinking": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-thinking-transparent-9x16.png"
+    },
+    "confirmation": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-confirmation-transparent-9x16.png"
+    },
+    "complete": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-complete-transparent-9x16.png"
+    },
+    "error": {
+      "hub": "A",
+      "kind": "oneshot",
+      "keyframe": "keyframes/claude-girl-uniform-error-transparent-9x16.png"
+    },
+    "drowsy": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-drowsy-transparent-9x16.png"
+    },
+    "reading": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-reading-transparent-9x16.png"
+    },
+    "writing": {
+      "hub": "A",
+      "kind": "loop",
+      "keyframe": "keyframes/claude-girl-uniform-writing-transparent-9x16.png"
+    }
+  },
+  "clips": [
+    {
+      "id": "idle-loop",
+      "type": "loop",
+      "state": "idle",
+      "file": "videos/loops/claude-girl-loop-uniform-idle-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "waiting-loop",
+      "type": "loop",
+      "state": "waiting",
+      "file": "videos/loops/claude-girl-loop-uniform-idle-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "thinking-loop",
+      "type": "loop",
+      "state": "thinking",
+      "file": "videos/loops/claude-girl-loop-uniform-thinking-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "confirmation-loop",
+      "type": "loop",
+      "state": "confirmation",
+      "file": "videos/loops/claude-girl-loop-uniform-confirmation-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "complete-loop",
+      "type": "loop",
+      "state": "complete",
+      "file": "videos/loops/claude-girl-loop-uniform-complete-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "drowsy-loop",
+      "type": "loop",
+      "state": "drowsy",
+      "file": "videos/loops/claude-girl-loop-uniform-drowsy-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "reading-loop",
+      "type": "loop",
+      "state": "reading",
+      "file": "videos/loops/claude-girl-loop-uniform-reading-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "writing-loop",
+      "type": "loop",
+      "state": "writing",
+      "file": "videos/loops/claude-girl-loop-uniform-writing-sway-transparent-9x16.avif"
+    },
+    {
+      "id": "thinking-intro",
+      "type": "intro",
+      "state": "thinking",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-thinking-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "thinking-outro",
+      "type": "outro",
+      "state": "thinking",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-thinking-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "confirmation-intro",
+      "type": "intro",
+      "state": "confirmation",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-confirmation-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "confirmation-outro",
+      "type": "outro",
+      "state": "confirmation",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-confirmation-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "complete-intro",
+      "type": "intro",
+      "state": "complete",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-complete-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "complete-outro",
+      "type": "outro",
+      "state": "complete",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-complete-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "drowsy-intro",
+      "type": "intro",
+      "state": "drowsy",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-drowsy-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "drowsy-outro",
+      "type": "outro",
+      "state": "drowsy",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-drowsy-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "reading-intro",
+      "type": "intro",
+      "state": "reading",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-reading-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "reading-outro",
+      "type": "outro",
+      "state": "reading",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-reading-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "writing-intro",
+      "type": "intro",
+      "state": "writing",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-writing-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "writing-outro",
+      "type": "outro",
+      "state": "writing",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-writing-state-to-hub-transparent-9x16.avif"
+    },
+    {
+      "id": "error-intro",
+      "type": "intro",
+      "state": "error",
+      "from": "A",
+      "file": "videos/transitions/claude-girl-uniform-error-hub-to-state-transparent-9x16.avif"
+    },
+    {
+      "id": "error-outro",
+      "type": "outro",
+      "state": "error",
+      "to": "A",
+      "file": "videos/transitions/claude-girl-uniform-error-state-to-hub-transparent-9x16.avif"
+    }
+  ]
+}

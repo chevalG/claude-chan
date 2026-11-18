@@ -14,6 +14,11 @@ resources/assets-chibi/hitmask.png
 resources/assets-maid/keyframes/
 resources/assets-maid/videos/
 resources/assets-maid/hitmask.png
+resources/assets-uniform/keyframes/
+resources/assets-uniform/videos/
+resources/assets-uniform/hitmask.png
 promo/
 # 从源码运行时的设置、窗口位置、日志
 /data/
+# 本地视觉验收截图
+qc/
